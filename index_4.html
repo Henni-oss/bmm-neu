@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bachelor Medienmanagement — THWS Würzburg</title>
+<meta name="description" content="Bachelor Medienmanagement an der Technischen Hochschule Würzburg-Schweinfurt. Kommunikation, Betriebswirtschaft, Medientechnik. 7 Semester. Mit interaktivem Eignungstest." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ==================================================== SVG-Symbole -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="thws-code" viewBox="0 0 48 48">
+      <!-- THWS-Codemarke: 4x4-Punktmatrix, drei Eckpunkte als Marker -->
+      <g fill="currentColor">
+        <!-- obere Reihe -->
+        <rect x="2"  y="2"  width="8" height="8" rx="1.2"/>
+        <rect x="38" y="2"  width="8" height="8" rx="1.2"/>
+        <!-- innere Punkte -->
+        <rect x="14" y="14" width="4" height="4" rx="0.8"/>
+        <rect x="24" y="14" width="4" height="4" rx="0.8"/>
+        <rect x="34" y="14" width="4" height="4" rx="0.8"/>
+        <rect x="14" y="24" width="4" height="4" rx="0.8"/>
+        <rect x="24" y="24" width="4" height="4" rx="0.8"/>
+        <rect x="34" y="24" width="4" height="4" rx="0.8"/>
+        <rect x="14" y="34" width="4" height="4" rx="0.8"/>
+        <rect x="24" y="34" width="4" height="4" rx="0.8"/>
+        <!-- unterer Marker -->
+        <rect x="2"  y="38" width="8" height="8" rx="1.2"/>
+      </g>
+    </symbol>
+    <symbol id="arrow" viewBox="0 0 24 24">
+      <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ==================================================== NAV -->
+<header class="nav" id="top">
+  <div class="nav__inner">
+    <a href="#top" class="nav__brand" aria-label="THWS Startseite">
+      <svg class="nav__brand-mark" aria-hidden="true"><use href="#thws-code"/></svg>
+      <span class="nav__brand-type">
+        <span class="nav__brand-abbr">thws</span>
+        <span class="nav__brand-name">Technische Hochschule<br>Würzburg-Schweinfurt</span>
+      </span>
+    </a>
+    <nav class="nav__links" aria-label="Hauptnavigation">
+      <a href="#profil">Profil</a>
+      <a href="#verlauf">Studienverlauf</a>
+      <a href="#vertiefung">Vertiefung</a>
+      <a href="#karriere">Karriere</a>
+      <a href="#eignungstest" class="nav__cta">Eignungstest</a>
+    </nav>
+    <button class="nav__burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav__mobile" id="mobile-nav" hidden>
+    <a href="#profil">Profil</a>
+    <a href="#verlauf">Studienverlauf</a>
+    <a href="#vertiefung">Vertiefung</a>
+    <a href="#karriere">Karriere</a>
+    <a href="#eignungstest">Eignungstest</a>
+  </nav>
+</header>
+
+<!-- ==================================================== HERO -->
+<section class="hero">
+  <div class="hero__grid">
+
+    <!-- Linker Block: orange Hauptachse mit Sublogo + gestürzte Zeile -->
+    <aside class="hero__brand">
+      <a href="#top" class="logo logo--inverse">
+        <svg class="logo__mark" aria-hidden="true"><use href="#thws-code"/></svg>
+        <span class="logo__type">
+          <span class="logo__abbr">bmm.thws</span>
+          <span class="logo__sub">Bachelor<br>Medien­management</span>
+        </span>
+      </a>
+
+      <div class="hero__vertical" aria-label="Wintersemester 2026/27, Bewerbung 1. Mai bis 15. Juli">
+        <span>Wintersemester 2026/27 · Bewerbung 1. Mai – 15. Juli</span>
+      </div>
+    </aside>
+
+    <!-- Rechter Block: Headline, Lead, CTAs -->
+    <div class="hero__copy">
+      <h1 class="hero__headline">
+        <span>Medien</span><br>
+        <span>verstehen.</span><br>
+        <span class="accent">Inhalte</span><br>
+        <span class="accent">gestalten.</span><br>
+        <span>Strategien</span><br>
+        <span>entwickeln.</span>
+      </h1>
+
+      <p class="hero__lead">
+        Ein interdisziplinärer Bachelor an der THWS, der
+        <strong>Kommunikation, Betriebswirtschaft, Medientechnik</strong>
+        und projektbasierte Praxis verbindet.
+        <strong>7 Semester. Vollzeit. Würzburg.</strong>
+      </p>
+
+      <div class="hero__ctas">
+        <a href="#eignungstest" class="btn btn--orange">
+          Bin ich geeignet? <svg class="btn__arrow" aria-hidden="true"><use href="#arrow"/></svg>
+        </a>
+        <a href="#profil" class="btn btn--dark">Studium kennenlernen</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================================================== PROFIL / STECKBRIEF -->
+<section id="profil" class="section section--light">
+  <div class="container">
+    <header class="section__head">
+      <span class="section__kicker">01 — Profil</span>
+      <h2 class="section__title">Was diesen Studiengang ausmacht</h2>
+      <p class="section__intro">
+        Medien­management an der THWS ist kein klassischer BWL-Schwerpunkt mit Medien-Anstrich.
+        Vielmehr ist es ein eigenständiger interdisziplinärer Bachelor, in dem
+        kommunikations­wissen­schaft­liche, betriebs­wirtschaft­liche und
+        medien­technische Inhalte gleichberechtigt nebeneinander­stehen — und in
+        Projektarbeit zusammen­geführt werden.
+      </p>
+    </header>
+
+    <dl class="facts">
+      <div class="fact"><dt>Abschluss</dt><dd>Bachelor of Arts (B.A.)</dd></div>
+      <div class="fact"><dt>Regelstudienzeit</dt><dd>7 Semester</dd></div>
+      <div class="fact"><dt>Studienform</dt><dd>Vollzeit, Präsenz</dd></div>
+      <div class="fact"><dt>ECTS</dt><dd>210 Credits</dd></div>
+      <div class="fact"><dt>Studienbeginn</dt><dd>Wintersemester</dd></div>
+      <div class="fact"><dt>Standort</dt><dd>Würzburg</dd></div>
+      <div class="fact"><dt>Unterrichtssprache</dt><dd>Deutsch</dd></div>
+      <div class="fact"><dt>Zulassung</dt><dd>NC, Eignungs­verfahren</dd></div>
+    </dl>
+
+    <div class="pillars">
+      <article class="pillar">
+        <span class="pillar__num">A</span>
+        <h3>Kommunikation &amp; Medien</h3>
+        <p>Medien­wirkung, journalistisches Arbeiten, Storytelling, PR und Marken­kommunikation als gestaltendes Handwerk.</p>
+      </article>
+      <article class="pillar">
+        <span class="pillar__num">B</span>
+        <h3>Betriebs­wirtschaft</h3>
+        <p>Medien­ökonomie, Marketing, Controlling, Recht, Projekt­management — die wirtschaftliche Sprache der Branche.</p>
+      </article>
+      <article class="pillar">
+        <span class="pillar__num">C</span>
+        <h3>Medien­technik &amp; Daten</h3>
+        <p>Web, Bewegtbild, UX/UI, Daten­analyse und KI-Tools — die technische Realität moderner Medien­produktion.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================================================== STUDIENVERLAUF -->
+<section id="verlauf" class="section section--dark">
+  <div class="container">
+    <header class="section__head section__head--inverse">
+      <span class="section__kicker">02 — Studienverlauf</span>
+      <h2 class="section__title">Sieben Semester, ein roter Faden</h2>
+      <p class="section__intro">
+        In den ersten Semestern werden Grundlagen in allen drei Säulen gelegt.
+        Ab Semester 4 kommen Vertiefungs­module und projekt­basierte Arbeit hinzu.
+        Das fünfte Semester ist ein vollständiges Praxis­semester — meist
+        sechs Monate in Agentur, Verlag, Unternehmen oder Redaktion.
+      </p>
+    </header>
+
+    <ol class="timeline">
+      <li class="step">
+        <span class="step__num">1</span>
+        <h3>Grundlagen</h3>
+        <p>BWL, Mathematik, Medien­theorie, Einführung Medien­technik.</p>
+      </li>
+      <li class="step">
+        <span class="step__num">2</span>
+        <h3>Vertiefung Grundlagen</h3>
+        <p>Marketing, Recht, Kommunikations­wissenschaft, digitale Werkzeuge.</p>
+      </li>
+      <li class="step">
+        <span class="step__num">3</span>
+        <h3>Methoden</h3>
+        <p>Empirische Forschung, Daten­analyse, Projekt­management, Konzeption.</p>
+      </li>
+      <li class="step">
+        <span class="step__num">4</span>
+        <h3>Profilbildung</h3>
+        <p>Erste Wahlmodule. Schwerpunkt­setzung beginnt.</p>
+      </li>
+      <li class="step step--accent">
+        <span class="step__num">5</span>
+        <h3>Praxissemester</h3>
+        <p>Ein halbes Jahr im Unternehmen — Agentur, Redaktion, Marken­kommunikation, In-House-Studio.</p>
+      </li>
+      <li class="step">
+        <span class="step__num">6</span>
+        <h3>Vertiefung &amp; Projekt</h3>
+        <p>Vertiefungs­module, anspruchsvolle Praxis­projekte, internationales Modul.</p>
+      </li>
+      <li class="step">
+        <span class="step__num">7</span>
+        <h3>Bachelor­arbeit</h3>
+        <p>Eigenständige Forschungs- oder Konzept­arbeit, Abschluss­kolloquium.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ==================================================== VERTIEFUNG -->
+<section id="vertiefung" class="section section--light">
+  <div class="container">
+    <header class="section__head">
+      <span class="section__kicker">03 — Vertiefung</span>
+      <h2 class="section__title">Vier Profile, ein Studiengang</h2>
+      <p class="section__intro">
+        Ab dem vierten Semester wählen Sie Schwerpunkte. Vier exemplarische
+        Profile zeigen, wohin der Studiengang Sie tragen kann — Sie können
+        diese Linien auch kombinieren.
+      </p>
+    </header>
+
+    <div class="cards">
+      <article class="card">
+        <span class="card__tag">Profil 1</span>
+        <h3>Marken &amp; Kommunikation</h3>
+        <p>Marken­führung, integrierte Kommunikation, Werbe­konzeption, PR. Für alle, die Geschichten strategisch erzählen wollen.</p>
+        <ul class="card__list">
+          <li>Brand Management</li>
+          <li>Werbe­psychologie</li>
+          <li>Kampagnen­planung</li>
+        </ul>
+      </article>
+      <article class="card">
+        <span class="card__tag">Profil 2</span>
+        <h3>Digitale Produkte</h3>
+        <p>UX, Web­produktion, Content-Management, digitale Geschäfts­modelle. Für alle, die Medien als Produkte denken.</p>
+        <ul class="card__list">
+          <li>UX/UI Design</li>
+          <li>Web­technologien</li>
+          <li>Produkt­management</li>
+        </ul>
+      </article>
+      <article class="card">
+        <span class="card__tag">Profil 3</span>
+        <h3>Daten &amp; Analytics</h3>
+        <p>Medien­daten, Web-Analytics, Marketing-Automation, KI-gestützte Inhalte. Für alle, die Medien messbar machen.</p>
+        <ul class="card__list">
+          <li>Web Analytics</li>
+          <li>Daten­visualisierung</li>
+          <li>KI-Anwendung</li>
+        </ul>
+      </article>
+      <article class="card">
+        <span class="card__tag">Profil 4</span>
+        <h3>Bewegtbild &amp; Storytelling</h3>
+        <p>Konzeption und Produktion von Video, Audio, Social-Formaten. Für alle, die Inhalte selbst gestalten wollen.</p>
+        <ul class="card__list">
+          <li>Video­produktion</li>
+          <li>Audio &amp; Podcast</li>
+          <li>Social Media</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================================================== KARRIERE -->
+<section id="karriere" class="section section--light section--soft">
+  <div class="container">
+    <header class="section__head">
+      <span class="section__kicker">04 — Karriere</span>
+      <h2 class="section__title">Wo Absolvent:innen arbeiten</h2>
+      <p class="section__intro">
+        Das interdisziplinäre Profil eröffnet ein breites Berufs­spektrum —
+        klassische Medien­häuser sind nur ein Teil davon.
+      </p>
+    </header>
+
+    <ul class="careers">
+      <li><strong>Agentur</strong><span>PR, Werbung, Digital, Branding</span></li>
+      <li><strong>In-House</strong><span>Marken-, Produkt-, Content-Teams in Unternehmen</span></li>
+      <li><strong>Medien­haus</strong><span>Verlag, Sender, Online-Redaktion</span></li>
+      <li><strong>Plattform &amp; Tech</strong><span>Streaming, Social, Adtech, Martech</span></li>
+      <li><strong>Beratung</strong><span>Kommunikations-, Marketing-, Digital­strategie</span></li>
+      <li><strong>Selbständig</strong><span>Eigenes Studio, Freelance, Gründung</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ==================================================== EIGNUNGSTEST -->
+<section id="eignungstest" class="section section--light">
+  <div class="container container--narrow">
+    <header class="section__head">
+      <span class="section__kicker">05 — Eignungstest</span>
+      <h2 class="section__title">Passt der Studiengang zu mir?</h2>
+      <p class="section__intro">
+        Sieben kurze Aussagen, eine Skala von 1 (trifft gar nicht zu) bis
+        5 (trifft voll und ganz zu). Keine Anmeldung, keine Speicherung —
+        Ihre Antworten verlassen Ihren Browser nicht.
+      </p>
+    </header>
+
+    <form id="quiz" class="quiz" autocomplete="off">
+      <!-- Fragen werden per JS gerendert -->
+      <div id="quiz-questions" class="quiz__questions"></div>
+
+      <div class="quiz__bar">
+        <div class="quiz__progress" aria-live="polite">
+          <span id="quiz-count">0</span> von <span id="quiz-total">7</span> beantwortet
+        </div>
+        <div class="quiz__progress-track" aria-hidden="true">
+          <div id="quiz-progress-fill" class="quiz__progress-fill"></div>
+        </div>
+      </div>
+
+      <div class="quiz__actions">
+        <button type="submit" id="quiz-evaluate" class="btn btn--orange" disabled>
+          Auswerten <svg class="btn__arrow" aria-hidden="true"><use href="#arrow"/></svg>
+        </button>
+        <button type="button" id="quiz-reset" class="btn btn--ghost">Zurücksetzen</button>
+      </div>
+    </form>
+
+    <!-- Ergebnis-Block (initial versteckt) -->
+    <article id="quiz-result" class="result" hidden aria-live="polite">
+      <header class="result__head">
+        <span class="result__score-label">Ihr Score</span>
+        <span class="result__score"><span id="result-points">0</span><small>/35</small></span>
+      </header>
+      <h3 id="result-title" class="result__title">—</h3>
+      <p id="result-text" class="result__text">—</p>
+
+      <h4 class="result__subhead">Ihr Profil im Detail</h4>
+      <div id="result-breakdown" class="breakdown"></div>
+
+      <div class="result__actions">
+        <button type="button" id="quiz-restart" class="btn btn--dark">Test wiederholen</button>
+        <a href="mailto:robert.butscher@thws.de?subject=Frage%20zum%20Bachelor%20Medienmanagement" class="btn btn--orange">
+          Beratung anfragen <svg class="btn__arrow" aria-hidden="true"><use href="#arrow"/></svg>
+        </a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ==================================================== FOOTER -->
+<footer class="foot">
+  <div class="container foot__grid">
+    <div class="foot__col foot__col--brand">
+      <div class="logo logo--inverse">
+        <svg class="logo__mark" aria-hidden="true"><use href="#thws-code"/></svg>
+        <span class="logo__type">
+          <span class="logo__abbr">bmm.thws</span>
+          <span class="logo__sub">Bachelor Medienmanagement</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="foot__col">
+      <h5>Studiengang</h5>
+      <ul>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#verlauf">Studienverlauf</a></li>
+        <li><a href="#vertiefung">Vertiefung</a></li>
+        <li><a href="#karriere">Karriere</a></li>
+      </ul>
+    </div>
+
+    <div class="foot__col">
+      <h5>Bewerbung</h5>
+      <p>1. Mai – 15. Juli<br>Studienbeginn jeweils zum<br>Wintersemester.</p>
+    </div>
+
+    <div class="foot__col">
+      <h5>Hochschule</h5>
+      <ul>
+        <li><a href="https://www.thws.de/" target="_blank" rel="noopener">thws.de</a></li>
+        <li><a href="https://business.thws.de/" target="_blank" rel="noopener">business.thws.de</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="foot__rule">
+    <small>Diese Seite ist eine Informations-Demo auf Basis öffentlich zugänglicher THWS-Inhalte. Verbindlich sind ausschließlich die offiziellen Quellen der Hochschule.</small>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
